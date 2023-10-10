@@ -6,7 +6,7 @@
 }
 
 .header{
-    background:linear-gradient(90deg, #223080 1.18%, #26bfd3 100%) ;
+    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%) ;
     color: whitesmoke;
     padding: 30px;
     width: 100%;
@@ -40,10 +40,20 @@
 }
 .header>.info{
     width: 90%;
-    height: 500px;
-    background-color: #923232;
+    height: 780px;
+    background-color: #FFFFFF;
     position: absolute;
     left: calc(50% - 45%);
     top: calc(50% - 15%);
     border-radius: 15px;
+    padding: 20px;
+    color: lime;
+    display: flex;
+}
+.header>.info>img{
+    width: 50%;
+    border-radius: 10px;
+}
+.header>.info>div>h1{
+    margin-left: 30px;
 }

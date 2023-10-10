@@ -18,7 +18,10 @@ export default function Header(){
         </div>
         </div>
         <div className="info">
-            
+        <img src="../images/5934.JPG" />
+        <div>
+            <h1>hello</h1>
+        </div>
         </div>
             </section>
     )
