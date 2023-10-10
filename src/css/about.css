@@ -1,0 +1,58 @@
+section.about{
+    color:black;
+    padding: 150px;
+    padding-bottom: 0;
+    font-family: 'Core';
+}
+
+section.about>h2{
+    font-size: 45px;
+    margin-top: 0;
+    text-align:center;
+}
+
+section.about>section{
+    display: flex;
+}
+
+section.about>section>div{
+    width: 80%;
+    text-align: justify;
+}
+section.about>section>div[data-leftside]{
+    margin-top: 250px;
+}
+section.about>section>div[data-rightside]{
+    margin-left: 180px;
+    margin-top: 250px;
+    width: 40%;
+}
+section.about>section>div[data-rightside]>p{
+    margin-bottom: 10px;
+}
+
+section.about>section>div>progress{
+    display: block;
+    padding: 15px;
+    width: 250px;
+    position: relative;
+}
+
+section.about>section>div>progress[data-a]{
+ top: 50px;
+}
+
+section.about>section>div>progress[data-b]{
+    top: 55px;
+}
+
+section.about>section>div>progress[data-c]{
+    top: 50px;
+}
+
+section.about>section>div>progress[data-d]{
+    top: 55px;
+}
+section.about>section>div>progress[data-e]{
+    top: 58px;
+}

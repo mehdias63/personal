@@ -47,13 +47,36 @@
     top: calc(50% - 15%);
     border-radius: 15px;
     padding: 20px;
-    color: lime;
+    color: black;
     display: flex;
 }
 .header>.info>img{
     width: 50%;
     border-radius: 10px;
 }
+.header>.info>div{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 40px;
+    
+}
 .header>.info>div>h1{
-    margin-left: 30px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.header>.info>div>h4{
+    margin-top: 20px;
+}
+.header>.info>div>span{
+    color: #766FFF;
+    margin-bottom: 20px;
+}
+.header>.info>div>.second{
+    color: #8c778c;
+    padding: 50px;
+    line-height:30px;
+    
 }

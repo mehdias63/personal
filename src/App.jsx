@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './components/header'
+import About from './components/about'
 
 function App() {
   
@@ -7,6 +8,7 @@ function App() {
     <>
       <div>
       <Header />
+      <About />
       </div>
     </>
   )

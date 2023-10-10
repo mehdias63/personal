@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBeer } from 'react-icons/fa';
 export default function Header(){
     return(
         <section className="header">
@@ -20,7 +21,14 @@ export default function Header(){
         <div className="info">
         <img src="../images/5934.JPG" />
         <div>
-            <h1>hello</h1>
+            <p>HELLO EVERYBDY, I AM</p>
+            <h1>MEHDI ASADI</h1>
+            <h4>JUNIOR UI/UX DEVELOPER</h4>
+            <p className="second">You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
+            <span>31st December, 1992</span>
+            <span>44 (012) 6954 783</span>
+            <span>businessplan@donald</span>
+            <span>Santa monica bullevard</span>
         </div>
         </div>
             </section>
