@@ -1,22 +1,29 @@
 section.about{
     color:black;
-    padding: 150px;
-    padding-bottom: 0;
+    padding: 50px;
+    padding-top:150px;
     font-family: 'Core';
-}
-
-section.about>h2{
-    font-size: 45px;
-    margin-top: 0;
-    text-align:center;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 section.about>section{
     display: flex;
 }
+section.about>section>div>h3{
+    font-size: 35px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+section.about>section>div>p{
+    color: #8c778c;
+    padding: 5px;
+    padding-right: 25px;
+    line-height:30px;
+}
 
 section.about>section>div{
-    width: 80%;
+    width: 90%;
     text-align: justify;
 }
 section.about>section>div[data-leftside]{
@@ -34,7 +41,7 @@ section.about>section>div[data-rightside]>p{
 section.about>section>div>progress{
     display: block;
     padding: 15px;
-    width: 250px;
+    width: 350px;
     position: relative;
 }
 
@@ -56,3 +63,25 @@ section.about>section>div>progress[data-d]{
 section.about>section>div>progress[data-e]{
     top: 58px;
 }
+section.about>section>div>div.data-first{
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+}
+section.about>section>div>div.data-first>div.data-second{
+    width: 180px;
+    height: 150px;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 1px solid rgb(218, 212, 212);
+    border-radius: 5px;
+}
+section.about>section>div>div.data-first>div.data-second>h1{
+    font-size: 25px;
+    margin: 10px;
+}
+section.about>section>div>div.data-first>div.data-second>h4{
+    color: #8c778c;
+}
+

@@ -8,9 +8,22 @@ export default function About(){
                 <p>
                 inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.
                     </p>
+                    <div className="data-first">
+                    <div className="data-second">
+                        <h1>$2.5M</h1>
+                        <h4>Total Donation</h4>
+                    </div>
+                    <div className="data-second">
+                        <h1>1465</h1>
+                        <h4>Total Projects</h4>
+                    </div>
+                    <div className="data-second">
+                        <h1>3965</h1>
+                        <h4>Total Volunteers</h4>
+                    </div>
+                    </div>
                     </div>
                 <div data-rightside>
-                <h3> Skills We Use </h3>
                 <progress max="100" value="85" data-a>a 85%</progress>
                 <p>After Effects 85%</p>
                 <progress max="100" value="90" data-b>b 90%</progress>
