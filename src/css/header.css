@@ -19,11 +19,6 @@
     top: 0;
     z-index: 1;
 }
-@media (min-height:604px){
-    .head{
-        background-color: aqua;
-    }
-}
 .title{
      font-size: 25px;
      font-weight: bold;
