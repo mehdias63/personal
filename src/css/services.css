@@ -1,0 +1,88 @@
+div.services{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+    box-sizing: border-box;
+}
+div.services>div>h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+div.services>div>p{
+    color: #777777;
+    margin-bottom: 30px;
+}
+div.services>div>ul{
+    height: 80px;
+    text-align: center;
+
+}
+div.services>div>ul>li{
+    display: inline-block;
+    margin: 30px;
+    height: 50px;
+    line-height: 50px;
+    
+    
+}
+div.services>div>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    transition: all 300ms linear;
+}
+div.services>div>ul>li>a.blue{
+    color: #766dff;
+}
+div.services>div>ul>li>a:hover{
+    color:#766dff ;
+}
+div.services>div>div.image{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    
+}
+div.services>div>div.image>div>div>img{
+    width: 360px;
+    height: 350px;
+    border-radius: 10px;
+}
+div.services>div>div.image>div>div{
+    width: 360px;
+    height: 350px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+div.services>div>div.image>div>div::before{
+    content: "\2735";
+    width: inherit;
+    height: inherit;
+    display: block;
+    position:absolute;
+    left: -120%;
+    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%);
+    border-radius: 10px;
+    opacity: 0.8;
+    font-size: 100px;
+    color: white;
+    line-height: 350px;
+    transition: all 400ms linear;
+}
+div.services>div>div.image>div>div:hover::before{
+    left: 0;
+}
+div.services>div>div.image>div>h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+div.services>div>div.image>div>p{
+    font-size: 16px;
+    color: #968f8f;
+}
