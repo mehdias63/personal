@@ -1,6 +1,5 @@
 div.services{
     width: 100%;
-    height: 100vh;
     padding: 20px;
     text-align: center;
     margin-top: 80px;
@@ -85,4 +84,21 @@ div.services>div>div.image>div>h2{
 div.services>div>div.image>div>p{
     font-size: 16px;
     color: #968f8f;
+}
+div.services>div>button{
+    padding:18px 40px;
+    margin: 7px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 700ms linear;
+    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%)
+}
+div.services>div>button:hover{
+    background:linear-gradient(90deg, #87EDFD 1.18%, #766FFF 100%) 
 }

@@ -4,6 +4,8 @@ import About from './components/about'
 import Intro from './components/intro'
 import News from './components/news'
 import Services from './components/services'
+import Order from './components/order'
+import Bootstrap  from 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
   
@@ -15,6 +17,7 @@ function App() {
       <Intro />
       <News />
       <Services />
+      <Order />
       </div>
     </>
   )

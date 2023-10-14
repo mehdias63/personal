@@ -63,6 +63,9 @@ export default function Services(){
                 </div>
                 </div>
             </div>
+            <div>
+                <button>Load More Items</button>
+            </div>
         </div>
     )
 }

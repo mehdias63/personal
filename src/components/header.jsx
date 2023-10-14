@@ -3,11 +3,11 @@ import { FaBeer } from 'react-icons/fa';
 export default function Header(){
     return(
         <section className="header">
-            <div className="head">
+            <div className="head navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
             <div>
             <h2 className="title">MEETME</h2>
             </div>
-            <div className="menu">
+            <div className="menu ">
             <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">ABOUT</a></li>

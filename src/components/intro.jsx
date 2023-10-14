@@ -14,9 +14,11 @@ export default function Intro(){
             </div>
             <div>
                 <div className="container">
-                <span></span>
-                <span></span>
-                <span></span>
+                    <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
                 </div>
                 
             </div>
