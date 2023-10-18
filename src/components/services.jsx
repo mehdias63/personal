@@ -1,4 +1,7 @@
 import React from "react"
+import SerCard from "./SerCard"
+import serdata from "./serdata"
+import serdatab from "./serdatab"
 export default function Services(){
     return(
         <div className="services">
@@ -16,54 +19,12 @@ export default function Services(){
             </ul>
             </div>
             <div>
-            <div className="image">
-                <div>
-                    <div>
-                    <img src="../images/project-1.jpg.webp" />
-                    </div>
-                    <h2>3D Helmet Design</h2>
-                    <p>Client Project</p>
-                </div>
-                <div>
-                    <div>
-                    <img src="../images/project-2.jpg.webp" />
-                    </div>
-                    <h2>2D Vinyl Design</h2>
-                    <p>Client Project</p>
-                </div>
-                <div>
-                    <div>
-                    <img src="../images/project-3.jpg.webp"/>
-                    </div>
-                    <h2>Creative Poster Design</h2>
-                    <p>Client Project</p>
-                </div>
+                <div className="image">
+                {serdata.map(card => <SerCard key={card.id} titel={card.titel} description={card.description} image={card.image} /> )}
                 </div>
                 <div className="image">
-                <div>
-                    <div>
-                    <img src="../images/project-4.jpg.webp"/>
-                    </div>
-                    <h2>Embosed Logo Design</h2>
-                    <p>Client Project</p>
+                {serdatab.map(card => <SerCard key={card.id} titel={card.titel} description={card.description} image={card.image} /> )}
                 </div>
-                <div>
-                    <div>
-                    <img src="../images/project-5.jpg.webp"/>
-                    </div>
-                    <h2>3D Disposable Bottle</h2>
-                    <p>Client Project</p>
-                </div>
-                <div>
-                    <div>
-                    <img src="../images/project-6.jpg.webp" />
-                    </div>
-                    <h2>3D Logo Design</h2>
-                    <p>Client Project</p>
-                </div>
-                </div>
-            </div>
-            <div>
                 <button>Load More Items</button>
             </div>
         </div>
