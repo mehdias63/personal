@@ -1,8 +1,10 @@
 import React from "react";
+import HeadCard from "./HeadCard";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
 import { FiPhone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineHome } from "react-icons/ai";
+import headata from "./headata";
 export default function Header(){
     return(
         <section className="header">
@@ -12,12 +14,7 @@ export default function Header(){
             </div>
             <div className="menu ">
             <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#pages">PAGES</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            {headata.map(card => <HeadCard key={card.id} titel={card.titel} /> )}
         </ul>
         </div>
         </div>

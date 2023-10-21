@@ -2,6 +2,8 @@ import React from "react"
 import SerCard from "./SerCard"
 import serdata from "./serdata"
 import serdatab from "./serdatab"
+import UlserCard from "./UlserCard"
+import ulserdata from "./ulserdata"
 export default function Services(){
     return(
         <div className="services">
@@ -11,11 +13,7 @@ export default function Services(){
             </div>
             <div>
             <ul>
-            <li><a href="#all" className="blue">ALL</a></li>
-            <li><a href="#vector">VECTOR</a></li>
-            <li><a href="#raster">RASTER</a></li>
-            <li><a href="#ui/ux">UI/UX</a></li>
-            <li><a href="#printing">PRINTING</a></li>
+            {ulserdata.map(card => <UlserCard key={card.id} titel={card.titel} /> )}
             </ul>
             </div>
             <div>
