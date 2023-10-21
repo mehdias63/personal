@@ -98,4 +98,23 @@
     margin-right: 20px;
     color: #766FFF;
 }
+.header>.info>div>div{
+    margin: 10px;
+}
+.header>.info>div>div>span{
+    display: inline-block;
+    background-color: #e7e7ee;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 300ms linear;
+    
+}
+.header>.info>div>div>span:hover{
+    background:linear-gradient(90deg, #87EDFD 1.18%, #766FFF 100%) 
+}
 

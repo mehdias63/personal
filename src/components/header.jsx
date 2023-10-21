@@ -4,6 +4,9 @@ import { HiOutlineCalendarDays } from "react-icons/hi2";
 import { FiPhone } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineHome } from "react-icons/ai";
+import { LuFacebook } from "react-icons/lu";
+import { SlSocialTwitter } from "react-icons/sl";
+import { SlSocialLinkedin } from "react-icons/sl";
 import headata from "./headata";
 export default function Header(){
     return(
@@ -29,6 +32,11 @@ export default function Header(){
             <span><i><FiPhone /></i>44 (012) 6954 783</span>
             <span><i><AiOutlineMail /></i>businessplan@donald</span>
             <span><i><AiOutlineHome /></i>Santa monica bullevard</span>
+            <div>
+                <span><i><LuFacebook /></i></span>
+                <span><i><SlSocialTwitter /></i></span>
+                <span><i><SlSocialLinkedin /></i></span>
+            </div>
         </div>
         </div>
             </section>
