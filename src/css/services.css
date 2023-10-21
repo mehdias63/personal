@@ -70,7 +70,7 @@ div.services>div>div.image>div.count::before{
     position:absolute;
     left: -120%;
     background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%);
-    border-radius: 10px;
+    border-radius:10px;
     opacity: 0.8;
     font-size: 100px;
     color: white;
@@ -105,14 +105,11 @@ div.services>div>button{
 div.services>div>button:hover{
     background:linear-gradient(90deg, #87EDFD 1.18%, #766FFF 100%) 
 }
-div.services>div>div.image>div.count{
-   
-
-}
 div.services>div>div.image>div.count>h1{
     font-size: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
+    font-weight: 500;
 }
 div.services>div>div.image>div.count>p{
     font-size: 16px;

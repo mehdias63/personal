@@ -86,3 +86,16 @@
     line-height:30px;
     
 }
+.header>.info>div>span{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 150px;
+    cursor: pointer;
+    color: gray;
+}
+.header>.info>div>span>i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: #766FFF;
+}
+

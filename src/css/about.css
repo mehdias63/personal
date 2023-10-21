@@ -65,7 +65,7 @@ section.about>section>div>progress[data-e]{
 }
 section.about>section>div>div.data-first{
     display: flex;
-    padding: 5px;
+    padding: 15px;
     margin-top: 10px;
 }
 section.about>section>div>div.data-first>div.data-second{
@@ -79,9 +79,15 @@ section.about>section>div>div.data-first>div.data-second{
 }
 section.about>section>div>div.data-first>div.data-second>h1{
     font-size: 25px;
-    margin: 10px;
+    margin: 10px 0;
 }
 section.about>section>div>div.data-first>div.data-second>h4{
     color: #8c778c;
+    font-size: 16px;
+    margin-top: 20px;
+}
+section.about>section>div>div.data-first>div.data-second>span{
+    font-size: 25px;
+    color: #766FFF;
 }
 

@@ -1,4 +1,7 @@
 import React from "react"
+import { BiCoinStack } from "react-icons/bi";
+import { PiBook } from "react-icons/pi";
+import { IoPeopleOutline } from "react-icons/io5";
 export default function About(){
     return(
         <section className="about">
@@ -10,14 +13,17 @@ export default function About(){
                     </p>
                     <div className="data-first">
                     <div className="data-second">
+                        <span><BiCoinStack /></span>
                         <h1>$2.5M</h1>
                         <h4>Total Donation</h4>
                     </div>
                     <div className="data-second">
+                        <span><PiBook /></span>
                         <h1>1465</h1>
                         <h4>Total Projects</h4>
                     </div>
                     <div className="data-second">
+                        <span><IoPeopleOutline /></span>
                         <h1>3965</h1>
                         <h4>Total Volunteers</h4>
                     </div>

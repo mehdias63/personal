@@ -1,5 +1,8 @@
 import React from "react";
-import { FaBeer } from 'react-icons/fa';
+import { HiOutlineCalendarDays } from "react-icons/hi2";
+import { FiPhone } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 export default function Header(){
     return(
         <section className="header">
@@ -25,10 +28,10 @@ export default function Header(){
             <h1>MEHDI ASADI</h1>
             <h4>JUNIOR UI/UX DEVELOPER</h4>
             <p className="second">You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-            <span>31st December, 1992</span>
-            <span>44 (012) 6954 783</span>
-            <span>businessplan@donald</span>
-            <span>Santa monica bullevard</span>
+            <span><i><HiOutlineCalendarDays /></i>31st December, 1992</span>
+            <span><i><FiPhone /></i>44 (012) 6954 783</span>
+            <span><i><AiOutlineMail /></i>businessplan@donald</span>
+            <span><i><AiOutlineHome /></i>Santa monica bullevard</span>
         </div>
         </div>
             </section>
