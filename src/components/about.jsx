@@ -2,6 +2,9 @@ import React from "react"
 import { BiCoinStack } from "react-icons/bi";
 import { PiBook } from "react-icons/pi";
 import { IoPeopleOutline } from "react-icons/io5";
+import Prog from "./prog"
+import prodata from "./prodata";
+
 export default function About(){
     return(
         <section className="about">
@@ -30,17 +33,8 @@ export default function About(){
                     </div>
                     </div>
                 <div data-rightside>
-                <progress max="100" value="85" data-a>a 85%</progress>
-                <p>After Effects 85%</p>
-                <progress max="100" value="90" data-b>b 90%</progress>
-                <p>Photoshop 90%</p>
-                <progress max="100" value="70" data-c>c 70%</progress>
-                <p>Illustrator 70%</p>
-                <progress max="100" value="95" data-d>d 95%</progress>
-                <p>Sublime 95%</p>
-                <progress max="100" value="75" data-e>e 75%</progress>
-                <p>Sketch 75%</p>
-            </div>
+                {prodata.map(card => <Prog key={card.titel} titel={card.titel} now={card.new} /> )}
+                </div>
             </section>
             </section>
             )

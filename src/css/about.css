@@ -27,15 +27,17 @@ section.about>section>div{
     text-align: justify;
 }
 section.about>section>div[data-leftside]{
-    margin-top: 250px;
+    margin-top: 280px;
 }
 section.about>section>div[data-rightside]{
     margin-left: 180px;
-    margin-top: 250px;
+    margin-top: 350px;
+    margin-right: 20px;
     width: 40%;
 }
-section.about>section>div[data-rightside]>p{
-    margin-bottom: 10px;
+p.btn{
+    font-size: 18px;
+    margin-bottom: -2px;
 }
 
 section.about>section>div>progress{
@@ -43,25 +45,6 @@ section.about>section>div>progress{
     padding: 15px;
     width: 350px;
     position: relative;
-}
-
-section.about>section>div>progress[data-a]{
- top: 50px;
-}
-
-section.about>section>div>progress[data-b]{
-    top: 55px;
-}
-
-section.about>section>div>progress[data-c]{
-    top: 50px;
-}
-
-section.about>section>div>progress[data-d]{
-    top: 55px;
-}
-section.about>section>div>progress[data-e]{
-    top: 58px;
 }
 section.about>section>div>div.data-first{
     display: flex;
