@@ -4,6 +4,7 @@ import serdata from "./serdata"
 import serdatab from "./serdatab"
 import UlserCard from "./UlserCard"
 import ulserdata from "./ulserdata"
+import Button from "./Button"
 export default function Services(){
     return(
         <div className="services">
@@ -23,7 +24,7 @@ export default function Services(){
                 <div className="image">
                 {serdatab.map(card => <SerCard key={card.id} titel={card.titel} description={card.description} image={card.image} /> )}
                 </div>
-                <button>Load More Items</button>
+                <Button size="lg">Load More Items</Button>
             </div>
         </div>
     )

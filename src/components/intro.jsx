@@ -1,10 +1,11 @@
 import React from "react"
+import Button from "./Button"
 export default function Intro(){
     return(
         <div className="intro">
             <div className="btn">
-            <button>My Experiences</button>
-            <button>My Education</button>
+            <Button size="lg">My Experiences</Button>
+            <Button size="lg">My Education</Button>
             </div>
             <div className="count">
             <div >

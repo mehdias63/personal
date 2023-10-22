@@ -6,6 +6,7 @@ import News from './components/news'
 import Services from './components/services'
 import Order from './components/order'
 import Footer from './components/footer'
+import Button from './components/Button'
 import Bootstrap  from 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Order />
       <Footer />
+      <Button />
       </div>
     </>
   )
