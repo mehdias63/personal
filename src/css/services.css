@@ -56,17 +56,18 @@ div.services>div>div.image>div.count{
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    border-radius: 10px;
     transition: all 400ms linear;
 }
 div.services>div>div.image>div.count>img{
-    width: 360px;
-    height: 350px;
-    border-radius: 15px;
+    width: 345px;
+    height: 345px;
+    border-radius: 10px;
 }
 div.services>div>div.image>div.count::before{
     content: "\2735";
-    width: 360px;
-    height: 350px;
+    width: 345px;
+    height: 345px;
     display: block;
     position:absolute;
     left: -120%;

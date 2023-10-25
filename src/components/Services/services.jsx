@@ -4,7 +4,7 @@ import serdata from "./serdata"
 import serdatab from "./serdatab"
 import UlserCard from "./UlserCard"
 import ulserdata from "./ulserdata"
-import Button from "./Button"
+import Button from "../Button"
 export default function Services(){
     return(
         <div className="services">

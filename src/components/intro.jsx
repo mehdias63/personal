@@ -1,5 +1,7 @@
 import React from "react"
 import Button from "./Button"
+import Intcard from "./Intcard"
+import intdata from "./intdata"
 export default function Intro(){
     return(
         <div className="intro">
@@ -7,34 +9,7 @@ export default function Intro(){
             <Button size="lg">My Experiences</Button>
             <Button size="lg">My Education</Button>
             </div>
-            <div className="count">
-            <div >
-                <h3>March 2017 to present</h3>
-                <h3>March 2017 to present</h3>
-                <h3>March 2017 to present</h3>
-            </div>
-            <div>
-                <div className="container">
-                    <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </div>
-                </div>
-                
-            </div>
-            <div>
-                <h1>COLORLIB</h1>
-                <h4>Senior Web Developer</h4>
-                <h4>Santa monica, Los angeles</h4>
-                <h1>COLORLIB</h1>
-                <h4>Senior Web Developer</h4>
-                <h4>Santa monica, Los angeles</h4>
-                <h1>COLORLIB</h1>
-                <h4>Senior Web Developer</h4>
-                <h4>Santa monica, Los angeles</h4>
-            </div>
-            </div>
+            {intdata.map(card => <Intcard key={card.id} titel={card.titel} description={card.description} text={card.text} textdat={card.textdat} /> )}
         </div>
     )
     
