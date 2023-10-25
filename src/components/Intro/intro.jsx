@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "./Button"
+import Button from "../Button"
 import Intcard from "./Intcard"
 import intdata from "./intdata"
 export default function Intro(){
