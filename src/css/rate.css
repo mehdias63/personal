@@ -1,0 +1,27 @@
+div.rate{
+    background: linear-gradient(135deg, #656a7c , #4f5870); 
+    text-align: center;
+    height: 50vh;
+    padding: 50px;
+}
+div.rate>div.rate-head{
+    color:white;
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+div.rate>div.rate-bottom{
+    padding: 32px 64px;
+}
+div.rate>div.rate-bottom>div.star>i{
+    font-size: 2.6em;
+    cursor: pointer;
+    color: #292f3d;
+    transition: color 0.5s;
+}
+div.rate>div.rate-bottom>div.star>i.in-rate{
+    color: #ffcf87;
+}
+div.rate>div.rate-bottom>div.star>i.in-hover{
+    color: rgba(255, 207,135, 0.3);
+}

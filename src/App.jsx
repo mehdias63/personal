@@ -7,6 +7,7 @@ import Services from './components/Services/services'
 import Order from './components/Order/order'
 import Footer from './components/footer'
 import Button from './components/Button'
+import Rate from './components/Rate/rate'
 import Bootstrap  from 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <News />
       <Services />
       <Order />
+      <Rate />
       <Footer />
       <Button />
       </div>

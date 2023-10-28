@@ -28,7 +28,7 @@ export default function Header(){
             <h1>MEHDI ASADI</h1>
             <h4>JUNIOR UI/UX DEVELOPER</h4>
             <p className="second">You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-            <span><i><HiOutlineCalendarDays /></i>31st December, 1992</span>
+            <span><i><HiOutlineCalendarDays /></i>23st December, 1984</span>
             <span><i><FiPhone /></i>44 (012) 6954 783</span>
             <span><i><AiOutlineMail /></i>businessplan@donald</span>
             <span><i><AiOutlineHome /></i>Santa monica bullevard</span>
