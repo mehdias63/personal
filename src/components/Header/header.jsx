@@ -11,13 +11,13 @@ import headata from "./headata";
 export default function Header(){
     return(
         <section className="header">
-            <div className="head navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+            <div className="head ">
             <div>
             <h2 className="title">MEETME</h2>
             </div>
             <div className="menu ">
             <ul>
-            {headata.map(card => <HeadCard key={card.id} titel={card.titel} /> )}
+            {headata.map(card => < HeadCard key={card.id} titel={card.titel} /> )}
         </ul>
         </div>
         </div>

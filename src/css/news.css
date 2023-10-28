@@ -1,6 +1,6 @@
 div.news{
     background-color: #e7e7ee;
-    padding: 20px;
+    padding: 2px;
     
 }
 div.news>div.newdata{
@@ -18,21 +18,20 @@ div.news>div.new{
     display: flex;
 }
 div.news>div.new>div{
-    width: 350px;
-    height: 340px;
+    width: 360px;
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 20px;
-    margin-top: 50px;
-    padding: 20px;
-    margin-bottom: 150px;
+    padding: 5px;
+    margin: 10px 0 150px 40px ;   
 }
 div.news>div.new>div>span{
     font-size: 60px;
+    display: inline-block;
     color: lightgray;
     margin-left: 20px;
     cursor: pointer;
     transition: all 300ms linear;
+    margin-top: 10px;
 }
 div.news>div.new>div>span:hover{
     color: #766FFF;
@@ -47,4 +46,25 @@ div.news>div.new>div>p{
     color: #8c778c;
     line-height:20px;
     margin-top: 10px;
+}
+@media (max-width: 600px){
+    div.news>div.new{
+        flex-direction: column;
+    }
+    div.news>div.newdata>p{
+        padding: 2px 5px;
+        font-size: 16px;
+    }
+    div.news>div.new>div{
+        margin:10px 5px 15px 60px;
+    }
+    div.news>div.new>div>h1,div.news>div.new>div>p{
+        font-size: 16px;
+    }
+    div.news>div.new>div>span{
+        font-size: 40px;
+    }
+    div.news>div.newdata>h1{
+        font-size: 25px;
+    }
 }

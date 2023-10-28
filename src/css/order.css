@@ -42,7 +42,22 @@ div.order>div.data>div>span{
     margin-left: 10px;
     font-size: 20px;
 }
-
-div.order>div.data>div>spanbefore{
-    content: "\2730";
+@media (max-width: 600px){
+    div.order{
+        padding: 5px;
+        height: auto;
+    }
+    div.order>p{
+        padding: 5px 15px;
+    }
+    div.order>div.data{
+        flex-direction: column;
+    }
+    div.order>div.data>div{
+        width: 350px;
+        height: 350px;
+        margin: 15px;
+        margin-left: 60px;
+    }
+    
 }

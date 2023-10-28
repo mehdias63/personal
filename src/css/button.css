@@ -2,7 +2,7 @@ button {
     border: none;
 }
 button.button-small {
-    padding: 7px 11px;
+    padding: 10px 15px;
     font-size: 12px;
 }
 

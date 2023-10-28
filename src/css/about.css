@@ -73,4 +73,28 @@ section.about>section>div>div.data-first>div.data-second>span{
     font-size: 25px;
     color: #766FFF;
 }
+@media (max-width: 600px){
+    section.about{
+        padding: 5px;
+        padding-top: 15px;
+    }
+    section.about>section{
+        flex-direction: column;
+    }
+    section.about>section>div>h3{
+        font-size: 25px;
+    }
+    section.about>section>div>p{
+        font-size: 15px;
+        padding-right: 5px;
+    }
+    section.about>section>div>div.data-first{
+        flex-direction: column;
+        margin-left: 90px;
+    }
+    section.about>section>div[data-rightside]{
+        margin: 10px 10px 50px 20px;
+        width: 80%;
+    }
+}
 

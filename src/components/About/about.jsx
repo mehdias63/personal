@@ -16,7 +16,7 @@ export default function About(){
                     </p>
                     <div className="data-first">
                     <div className="data-second">
-                        <span><BiCoinStack /></span>
+                        <span>< BiCoinStack /></span>
                         <h1>$2.5M</h1>
                         <h4>Total Donation</h4>
                     </div>

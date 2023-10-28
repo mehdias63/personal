@@ -13,7 +13,7 @@ export default function Rate() {
             <p className='titel'>Please Rate Me</p>
         </div>
         <div className='rate-bottom'>
-            <div className='star'>
+            <div className='star flex justify-center'>
                 {possibel.map(rate => 
                     <i key={rate} 
                     className={((rate <= selected) ? 'in-rate' : '') + 

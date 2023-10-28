@@ -15,16 +15,16 @@
     display: flex;
     justify-content:space-between;
     z-index: 1;
-    position:sticky;
 }
 .title{
      font-size: 25px;
      font-weight: bold;
-     margin-top: 10px;
+     margin-top: 35px;
      margin-left: 40px;
 }
 .header>.head>.menu>ul{
     margin-left: 350px;
+    margin-top: 25px;
 }
 .header>.head>.menu>ul>li{
     display: inline-block;
@@ -43,6 +43,10 @@
     width: inherit;
     height: inherit;
     font-size: 14px;
+    transition: all 300ms linear;
+}
+.header>.head>.menu>ul>li>a:hover{
+    color: #766FFF;
 }
 .header>.info{
     width: 90%;
@@ -76,10 +80,6 @@
 .header>.info>div>h4{
     margin-top: 20px;
 }
-.header>.info>div>span{
-    color: #766FFF;
-    margin-bottom: 20px;
-}
 .header>.info>div>.second{
     color: #8c778c;
     padding: 50px;
@@ -90,12 +90,13 @@
     display: inline-block;
     margin-right: auto;
     margin-left: 150px;
+    margin-bottom: 20px;
     cursor: pointer;
     color: gray;
 }
 .header>.info>div>span>i{
     font-size: 25px;
-    margin-right: 20px;
+    margin-right: 10px;
     color: #766FFF;
 }
 .header>.info>div>div{
@@ -106,15 +107,89 @@
     background-color: #e7e7ee;
     width: 40px;
     height: 40px;
+    line-height: 15px;
+    text-align: center;
     margin: 5px;
     font-size: 20px;
     border-radius: 5px;
-    padding: 5px;
+    text-align: center;
+    padding: 10px;
     cursor: pointer;
     transition: all 300ms linear;
     
 }
 .header>.info>div>div>span:hover{
     background:linear-gradient(90deg, #87EDFD 1.18%, #766FFF 100%) 
+}
+@media (max-width: 600px){
+    .header{
+        height: 50vh;
+    }
+    .head{
+        justify-content: center;
+    }
+    .title{
+        margin-left: 5px;
+    }
+    .header>.info{
+       height: 400px;
+       padding: 10px;
+       top: calc(50% - 25%);
+    }
+    .header>.head>.menu>ul{
+        display: flex;
+        margin-left: 20px;
+    }
+    .header>.head>.menu>ul>li{
+        padding: 0 7px;
+    
+    }
+    .header>.head>.menu>ul>li>a{
+        font-size: 10px;
+    }
+    .header>.info>img{
+        height: 300px;
+    }
+    .header>.info>div{
+        margin: 0;
+        padding: 1px;
+    }
+    .header>.info>div>p{
+        font-size: 12px;
+    }
+    .header>.info>div>h1{
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-weight: 500;
+    }
+    .header>.info>div>h4{
+        margin-top: 10px;
+        font-size: 13px;
+        margin-bottom: -5px;
+    }
+    .header>.info>div>.second{
+        color: #8c778c;
+        padding: 5px;
+        line-height:20px;
+        font-size: 12px;
+        margin-top: 10px;
+        
+    }
+    .header>.info>div>span{
+        margin-left: 20px;
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+    .header>.info>div>span>i{
+        font-size: 18px;
+    }
+    .header>.info>div>div>span>i{
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        line-height: 5px;
+    }
+    
 }
 
