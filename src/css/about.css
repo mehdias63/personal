@@ -151,7 +151,8 @@ section.about>section>div>div.data-first>div.data-second>span{
     }
     section.about>section>div>div.data-first{
         flex-direction: column;
-        margin-left: 90px;
+        justify-content: center;
+        align-items: center;
     }
     section.about>section>div[data-rightside]{
         margin: 10px 10px 50px 20px;

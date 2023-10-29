@@ -68,7 +68,7 @@ div.services>div>div.image>div.count::before{
     height: 345px;
     display: block;
     position:absolute;
-    left: -120%;
+    left: -130%;
     background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%);
     border-radius:10px;
     opacity: 0.8;
@@ -115,6 +115,106 @@ div.services>div>div.image>div.count>p{
     font-size: 16px;
     color: #968f8f;
 }
+@media (max-width: 1270px){
+    div.services{
+        padding: 20px;
+        margin-top: 30px;
+    }
+    div.services>div>h1{
+        font-size: 32px;
+    }
+    div.services>div>div.image{
+        margin: 3px;
+        padding: 5px;
+    }
+    div.services>div>div.image>div.count{
+        width: 300px;
+        height: 450px;
+        
+    }
+    div.services>div>div.image>div.count>img{
+        width: 300px;
+        height: 320px;
+    }
+    div.services>div>div.image>div.count::before{
+        width:300px ;
+        height: 320px;
+        font-size: 75px;
+        line-height: 320px;
+    }
+}
+@media (max-width: 1000px){
+    div.services{
+        padding: 15px;
+        margin-top: 25px;
+    }
+    div.services>div>h1{
+        font-size: 30px;
+    }
+    div.services>div>ul>li{
+        margin: 25px;
+    }
+    div.services>div>ul>li>a{
+        font-size: 14px;
+    }
+    div.services>div>p{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    div.services>div>div.image{
+        margin: 2px;
+        padding: 5px;
+    }
+    div.services>div>div.image>div.count{
+        width: 250px;
+        height: 450px;
+        
+    }
+    div.services>div>div.image>div.count>img{
+        width: 250px;
+        height: 300px;
+    }
+    div.services>div>div.image>div.count::before{
+        width:250px ;
+        height: 300px;
+        font-size: 70px;
+        line-height: 300px;
+    }
+}
+@media (max-width: 800px){
+    div.services{
+        padding: 10px;
+        margin-top: 25px;
+    }
+    div.services>div>h1{
+        font-size: 28px;
+    }
+    div.services>div>ul>li{
+        margin: 15px;
+    }
+    div.services>div>ul>li>a{
+        font-size: 13px;
+    }
+    div.services>div>div.image{
+        flex-direction: column;
+        align-items: center;
+    }
+    div.services>div>div.image>div.count{
+        width: 350px;
+        height: 450px;
+        
+    }
+    div.services>div>div.image>div.count>img{
+        width: 350px;
+        height: 350px;
+    }
+    div.services>div>div.image>div.count::before{
+        width:350px ;
+        height: 350px;
+        font-size: 70px;
+        line-height: 350px;
+    }
+}
 @media (max-width: 600px){
     div.services{
         padding: 5px;
@@ -133,14 +233,17 @@ div.services>div>div.image>div.count>p{
     div.services>div>ul>li{
         margin: 10px;
     }
+    div.services>div>ul>li>a{
+        font-size: 12px;
+    }
     div.services>div>div.image{
         flex-direction: column;
+        align-items: center;
     }
     div.services>div>div.image>div.count{
-        width: 300px;
+        width: 280px;
         height: 360px;
-        text-align: center;
-        margin-left: 50px;
+        
     }
     div.services>div>div.image>div.count>img{
         width: 280px;
