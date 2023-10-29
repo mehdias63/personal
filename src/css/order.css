@@ -13,6 +13,8 @@ div.order>p{
 }
 div.order>div.data{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 div.order>div.data>div{
     width: 350px;
@@ -42,6 +44,58 @@ div.order>div.data>div>span{
     margin-left: 10px;
     font-size: 20px;
 }
+@media (max-width: 1270px){
+    div.order{
+        padding: 18px;
+        height: auto;
+    }
+    div.order>p{
+        padding: 15px 150px;
+    }
+    div.order>div.data>div{
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1000px){
+    div.order{
+        padding: 15px;
+        height: auto;
+    }
+    div.order>p{
+        padding: 15px 120px;
+    }
+    div.order>div.data>div{
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+        margin: 5px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 800px){
+    div.order{
+        padding: 10px;
+        height: auto;
+    }
+    div.order>p{
+        padding: 10px 20px;
+    }
+    div.order>div.data{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    div.order>div.data>div{
+        width: 370px;
+        height: 350px;
+        margin: 15px;
+        margin-left: 60px;
+    }
+}
 @media (max-width: 600px){
     div.order{
         padding: 5px;
@@ -52,6 +106,7 @@ div.order>div.data>div>span{
     }
     div.order>div.data{
         flex-direction: column;
+        align-items: center;
     }
     div.order>div.data>div{
         width: 350px;
