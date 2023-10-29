@@ -10,7 +10,7 @@ export default function Rate() {
   return (
     <div className='rate'>
         <div className='rate-head'>
-            <p className='titel'>Please Rate Me</p>
+            <p className='titel text-Extreme'>Please Rate Me</p>
         </div>
         <div className='rate-bottom'>
             <div className='star flex justify-center'>
