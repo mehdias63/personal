@@ -47,6 +47,48 @@ div.news>div.new>div>p{
     line-height:20px;
     margin-top: 10px;
 }
+@media (max-width: 1000px){
+    div.news>div.newdata>p{
+        padding: 5px 10px;
+    }
+    div.news>div.new>div{
+        margin:5px;
+        margin-bottom: 30px;
+    }
+    div.news>div.new>div>span{
+        font-size: 50px;
+    }
+    div.news>div.newdata>h1{
+        font-size: 30px;
+    }
+    div.news>div.new>div>h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 800px){
+    div.news>div.new{
+        flex-direction: column;
+    }
+    div.news>div.newdata>p{
+        padding: 4px 5px;
+        font-size: 16px;
+    }
+    div.news>div.new>div{
+        margin:20px auto;
+    }
+    div.news>div.new>div>h1,div.news>div.new>div>p{
+        font-size: 16px;
+    }
+    div.news>div.new>div>span{
+        font-size: 45px;
+    }
+    div.news>div.newdata>h1{
+        font-size: 28px;
+    }
+    div.news>div.new>div>h1{
+        font-size: 18px;
+    }
+}
 @media (max-width: 600px){
     div.news>div.new{
         flex-direction: column;
@@ -56,7 +98,8 @@ div.news>div.new>div>p{
         font-size: 16px;
     }
     div.news>div.new>div{
-        margin:10px 5px 15px 60px;
+        margin:10px auto;
+        margin-bottom: 30px;
     }
     div.news>div.new>div>h1,div.news>div.new>div>p{
         font-size: 16px;
