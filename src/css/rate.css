@@ -25,3 +25,8 @@ div.rate>div.rate-bottom>div.star>i.in-rate{
 div.rate>div.rate-bottom>div.star>i.in-hover{
     color: rgba(255, 207,135, 0.3);
 }
+@media (max-width: 800px){
+    div.rate>div.rate-bottom>div.star>i{
+        font-size: 2em;
+    }
+}
