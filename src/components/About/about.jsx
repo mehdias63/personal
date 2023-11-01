@@ -7,7 +7,7 @@ import prodata from "./prodata";
 
 export default function About(){
     return(
-        <section className="about">
+        <section className="about"  id="about">
             <section>
             <div data-leftside>
                 <h3> ABOUT MYSELF </h3>

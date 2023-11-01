@@ -7,18 +7,23 @@ import { AiOutlineHome } from "react-icons/ai";
 import { LuFacebook } from "react-icons/lu";
 import { SlSocialTwitter } from "react-icons/sl";
 import { SlSocialLinkedin } from "react-icons/sl";
+import { GiHamburgerMenu } from "react-icons/gi";
 import headata from "./headata";
 export default function Header(){
     return(
-        <section className="header">
-            <div className="head ">
+        <section className="header" id="home" >
+            <div className="head " >
             <div>
             <h2 className="title">MEETME</h2>
             </div>
-            <div className="menu ">
+             <div className="menu ">
+             <label htmlFor="hamburger-menu"><GiHamburgerMenu /></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav>
             <ul>
             {headata.map(card => < HeadCard key={card.id} titel={card.titel} /> )}
         </ul>
+        </nav>
         </div>
         </div>
         <div className="info">

@@ -22,11 +22,14 @@
      margin-top: 35px;
      margin-left: 40px;
 }
-.header>.head>.menu>ul{
+.header>.head>.menu>label , .header>.head>.menu>input{
+    display: none;
+}
+.header>.head>.menu>nav>ul{
     margin-left: 350px;
     margin-top: 25px;
 }
-.header>.head>.menu>ul>li{
+.header>.head>.menu>nav>ul>li{
     display: inline-block;
     height: 50px;
     line-height: 50px;
@@ -36,7 +39,7 @@
     transition: all 300ms linear;
     
 }
-.header>.head>.menu>ul>li>a{
+.header>.head>.menu>nav>ul>li>a{
     text-decoration: none;
     color: #fff;
     font-weight: 600;
@@ -45,7 +48,7 @@
     font-size: 14px;
     transition: all 300ms linear;
 }
-.header>.head>.menu>ul>li>a:hover{
+.header>.head>.menu>nav>ul>li>a:hover{
     color: #766FFF;
 }
 .header>.info{
@@ -130,7 +133,7 @@
         padding: 15px;
         top: calc(50% - 20%);
      }
-     .header>.head>.menu>ul{
+     .header>.head>.menu>nav>ul{
         display: flex;
         margin-left: 45px;
     }
@@ -160,11 +163,11 @@
         padding: 15px;
         top: calc(50% - 20%);
      }
-     .header>.head>.menu>ul{
+     .header>.head>.menu>nav>ul{
         display: flex;
         margin-left: 40px;
     }
-    .header>.head>.menu>ul>li{
+    .header>.head>.menu>nav>ul>li{
         padding: 0 23px;
     }
     .header>.info>div{
@@ -214,15 +217,15 @@
     .title{
         margin-left: 5px;
     }
-    .header>.head>.menu>ul{
+    .header>.head>.menu>nav>ul{
         display: flex;
         margin-left: 30px;
     }
-    .header>.head>.menu>ul>li{
+    .header>.head>.menu>nav>ul>li{
         padding: 0 13px;
     
     }
-    .header>.head>.menu>ul>li>a{
+    .header>.head>.menu>nav>ul>li>a{
         font-size: 13px;
     }
     .header>.info>img{
@@ -257,12 +260,12 @@
     }
     
 }
-@media (max-width: 550px){
+@media (max-width: 600px){
     .header{
-        height: 50vh;
+        height: 80vh;
     }
     .head{
-        justify-content: center;
+        justify-content:space-between;
     }
     .title{
         margin-left: 5px;
@@ -272,16 +275,38 @@
        padding: 10px;
        top: calc(50% - 25%);
     }
-    .header>.head>.menu>ul{
+    .header>.head>.menu>label{
+        margin: 40px 25px 0 120px;
+        font-size: 25px;
+    }
+    .header>.head>.menu>label , .header>.head>.menu>input{
+        display: block;
+    }
+    .header>.head>.menu>nav{
+        display: none;
+    }
+    #hamburger-menu{
+        display: none;
+    }
+    #hamburger-menu:checked ~ nav {
+        display: block;
+    }
+    .header>.head>.menu>nav>ul{
         display: flex;
-        margin-left: 20px;
+        flex-direction: column;
+        
     }
-    .header>.head>.menu>ul>li{
-        padding: 0 7px;
-    
+    .header>.head>.menu>nav>ul>li{
+        width: 100%;
+        height: 25px;
+        margin: 2px;
+        
+     }
+    .header>.head>.menu>nav>ul>li>a{
+        font-size: 15px;
     }
-    .header>.head>.menu>ul>li>a{
-        font-size: 10px;
+    .header>.info{
+        margin-top: 200px;
     }
     .header>.info>img{
         height: 300px;
@@ -306,7 +331,7 @@
     .header>.info>div>.second{
         padding: 5px;
         line-height:20px;
-        font-size: 12px;
+        font-size: 11px;
         margin-top: 10px;
         
     }
