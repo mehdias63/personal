@@ -61,7 +61,6 @@
     display: flex;
 }
 .header>.info>img{
-    width: 50%;
     border-radius: 10px;
 }
 .header>.info>div{
