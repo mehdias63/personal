@@ -21,7 +21,7 @@ export default function Header(){
             <input type="checkbox" id="hamburger-menu" />
             <nav>
             <ul>
-            {headata.map(card => < HeadCard key={card.id} titel={card.titel} /> )}
+            {headata.map(card => < HeadCard key={card.id} titel={card.titel} id={card.id} /> )}
         </ul>
         </nav>
         </div>
