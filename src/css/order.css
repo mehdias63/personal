@@ -98,21 +98,20 @@ div.order>div.data>div>span{
 }
 @media (max-width: 600px){
     div.order{
+        width: 90%;
         padding: 5px;
         height: auto;
     }
     div.order>p{
-        padding: 5px 15px;
+        padding: 25px;
     }
     div.order>div.data{
         flex-direction: column;
         align-items: center;
     }
     div.order>div.data>div{
-        width: 350px;
-        height: 350px;
+        width: 80%;
         margin: 15px;
-        margin-left: 60px;
     }
     
 }

@@ -45,3 +45,13 @@ div.rate>div.rate-bottom>div.star>i.in-hover{
         font-size: 2em;
     }
 }
+@media (max-width: 550px){
+    div.rate{
+        width: 90%;
+        height: auto;
+        padding: 5px;
+    }
+    div.rate>div.rate-bottom>div.star>i{
+        font-size: 1.5em;
+    }
+}

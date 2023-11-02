@@ -136,18 +136,24 @@ section.about>section>div>div.data-first>div.data-second>span{
 }
 @media (max-width: 550px){
     section.about{
+        width: 90%;
         padding: 5px;
-        padding-top: 50px;
+        padding-top: 70px;
+        margin-top: 30px;
+        margin-left: 5px;
+        
     }
     section.about>section{
         flex-direction: column;
+        justify-content: center;
     }
     section.about>section>div>h3{
         font-size: 25px;
     }
     section.about>section>div>p{
-        font-size: 15px;
-        padding-right: 5px;
+        font-size: 12px;
+        padding: 20px;
+        margin-right: 10px;
     }
     section.about>section>div>div.data-first{
         flex-direction: column;
@@ -156,7 +162,7 @@ section.about>section>div>div.data-first>div.data-second>span{
     }
     section.about>section>div[data-rightside]{
         margin: 10px 10px 50px 20px;
-        width: 80%;
+        width: 70%;
     }
 }
 

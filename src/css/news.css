@@ -89,15 +89,23 @@ div.news>div.new>div>p{
         font-size: 18px;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 550px){
+    div.news{
+        width: 90%;
+    }
     div.news>div.new{
+        padding: 20px;
         flex-direction: column;
     }
+    div.news>div.newdata>h1{
+        font-size: 18px;
+    }
     div.news>div.newdata>p{
-        padding: 2px 5px;
-        font-size: 16px;
+        padding: 2px 15px;
+        font-size: 13px;
     }
     div.news>div.new>div{
+        width: 90%;
         margin:10px auto;
         margin-bottom: 30px;
     }
@@ -107,7 +115,5 @@ div.news>div.new>div>p{
     div.news>div.new>div>span{
         font-size: 40px;
     }
-    div.news>div.newdata>h1{
-        font-size: 25px;
-    }
+    
 }
