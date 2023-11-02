@@ -217,7 +217,7 @@ div.services>div>div.image>div.count>p{
 }
 @media (max-width: 550px){
     div.services{
-        width: 90%;
+        width: 100%;
         padding: 5px;
         margin-top: 20px;
     }

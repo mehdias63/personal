@@ -61,7 +61,7 @@ div.intro>div.count>div>h4{
 }
 @media (max-width: 550px){
     div.intro{
-        width: 90%;
+        width: 100%;
     }
     div.intro>div.count>div>div.container>div,div.intro>div.count>div>div.container>div>span{
         display: none;

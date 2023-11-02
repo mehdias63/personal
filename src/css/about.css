@@ -136,9 +136,9 @@ section.about>section>div>div.data-first>div.data-second>span{
 }
 @media (max-width: 550px){
     section.about{
-        width: 90%;
+        width: 100%;
         padding: 5px;
-        padding-top: 170px;
+        padding-top: 180px;
         margin-top: 30px;
         margin-left: 5px;
         

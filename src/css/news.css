@@ -91,7 +91,7 @@ div.news>div.new>div>p{
 }
 @media (max-width: 550px){
     div.news{
-        width: 90%;
+        width: 100%;
     }
     div.news>div.new{
         padding: 20px;

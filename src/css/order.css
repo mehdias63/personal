@@ -98,7 +98,7 @@ div.order>div.data>div>span{
 }
 @media (max-width: 600px){
     div.order{
-        width: 90%;
+        width: 100%;
         padding: 5px;
         height: auto;
     }
