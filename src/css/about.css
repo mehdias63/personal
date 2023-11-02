@@ -138,8 +138,8 @@ section.about>section>div>div.data-first>div.data-second>span{
     section.about{
         width: 100%;
         padding: 5px;
-        padding-top: 180px;
-        margin-top: 30px;
+        padding-top: 300px;
+        margin-top: 180px;
         margin-left: 5px;
         
     }
@@ -148,7 +148,7 @@ section.about>section>div>div.data-first>div.data-second>span{
         justify-content: center;
     }
     section.about>section>div>h3{
-        font-size: 25px;
+        font-size: 20px;
     }
     section.about>section>div>p{
         font-size: 12px;

@@ -263,7 +263,7 @@
 @media (max-width: 600px){
     .header{
         width: 100%;
-        height: 60vh;
+        height: 50vh;
     }
     .head{
         justify-content:space-between;
