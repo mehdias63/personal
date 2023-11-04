@@ -6,15 +6,13 @@
 }
 
 .header{
-    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%) ;
     color: whitesmoke;
     width: 100%;
-    height: 100vh;
+    
 }
 .head{
     display: flex;
     justify-content:space-between;
-    z-index: 1;
 }
 .title{
      font-size: 25px;
@@ -26,7 +24,6 @@
     display: none;
 }
 .header>.head>.menu>nav>ul{
-    margin-left: 350px;
     margin-top: 25px;
 }
 .header>.head>.menu>nav>ul>li{
@@ -53,11 +50,7 @@
 }
 .header>.info{
     width: 90%;
-    height: 780px;
     background-color: #FFFFFF;
-    position: absolute;
-    left: calc(50% - 45%);
-    top: calc(50% - 15%);
     border-radius: 15px;
     padding: 20px;
     color: black;
@@ -65,6 +58,7 @@
 }
 .header>.info>img{
     border-radius: 10px;
+    object-fit: cover;
 }
 .header>.info>div{
     display: flex;
@@ -125,13 +119,8 @@
     background:linear-gradient(90deg, #87EDFD 1.18%, #766FFF 100%) 
 }
 @media (max-width: 1270px){
-    .header{
-        height: 95vh;
-    }
     .header>.info{
-        height: 600px;
         padding: 15px;
-        top: calc(50% - 20%);
      }
      .header>.head>.menu>nav>ul{
         display: flex;
@@ -155,13 +144,8 @@
     }
 }
 @media (max-width: 1000px){
-    .header{
-        height: 90vh;
-    }
     .header>.info{
-        height: 550px;
         padding: 15px;
-        top: calc(50% - 20%);
      }
      .header>.head>.menu>nav>ul{
         display: flex;
@@ -174,9 +158,7 @@
         margin: 0;
         padding: 5px;
     }
-    .header>.info>img{
-        height: 450px;
-    }
+    
     .header>.info>div>p{
         font-size: 16px;
     }
@@ -203,13 +185,9 @@
     
 }
 @media (max-width: 800px){
-    .header{
-        height: 75vh;
-    }
+   
     .header>.info{
-        height: 450px;
         padding: 10px;
-        top: calc(50% - 20%);
      }
      .head{
         justify-content: center;
@@ -228,9 +206,7 @@
     .header>.head>.menu>nav>ul>li>a{
         font-size: 13px;
     }
-    .header>.info>img{
-        height: 350px;
-    }
+    
     .header>.info>div{
         margin: 0;
         padding: 3px;
@@ -261,11 +237,9 @@
     
 }
 @media (max-width: 600px){
-    .header{
-        width: 100%;
-        height: 50vh;
-    }
     .head{
+        width: 100%;
+        background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%) ;
         justify-content:space-between;
     }
     .title{
@@ -275,8 +249,10 @@
        padding: 20px;
        top: 0;
        flex-direction: column;
-       position: relative;
+       margin: 2px auto;
        margin-top: 30px;
+       
+       
     }
     .header>.head>.menu>label{
         margin: 40px 25px 0 120px;
@@ -298,15 +274,22 @@
         display: flex;
         flex-direction: column;
         
+        
     }
     .header>.head>.menu>nav>ul>li{
         width: 100%;
         height: 25px;
         margin: 2px;
+        box-shadow: 1px 1px 3px gray;
         
      }
     .header>.head>.menu>nav>ul>li>a{
         font-size: 15px;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        margin-top: -14px;
+
     }
     .header>.info>div{
         margin: 0;
