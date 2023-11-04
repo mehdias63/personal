@@ -8,14 +8,17 @@
 .header{
     color: whitesmoke;
     width: 100%;
+    font-size: 16px;
     
 }
 .head{
+    width: 100%;
+    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%) ;
     display: flex;
     justify-content:space-between;
 }
 .title{
-     font-size: 25px;
+     font-size: 1.625rem;
      font-weight: bold;
      margin-top: 35px;
      margin-left: 40px;
@@ -24,15 +27,15 @@
     display: none;
 }
 .header>.head>.menu>nav>ul{
-    margin-top: 25px;
+    margin-top: 1.625em;
 }
 .header>.head>.menu>nav>ul>li{
     display: inline-block;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.875em;
+    padding-right: 1.875em;
     transition: all 300ms linear;
     
 }
@@ -42,7 +45,7 @@
     font-weight: 600;
     width: inherit;
     height: inherit;
-    font-size: 14px;
+    font-size: 0.875rem;
     transition: all 300ms linear;
 }
 .header>.head>.menu>nav>ul>li>a:hover{
@@ -52,52 +55,56 @@
     width: 90%;
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding: 20px;
+    padding: 1.25em;
     color: black;
     display: flex;
 }
 .header>.info>img{
     border-radius: 10px;
     object-fit: cover;
+    max-width: 50%;
 }
 .header>.info>div{
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin: 50px auto;
-    padding: 40px;
+    margin: 3.125em auto;
+    padding: 2.5em;
     
 }
 .header>.info>div>h1{
-    font-size: 50px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: 3.125rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
     font-weight: 600;
 }
+.header>.info>div>p{
+    margin-top: 0.625rem;
+}
 .header>.info>div>h4{
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .header>.info>div>.second{
     color: #8c778c;
-    padding: 50px;
+    padding: 3.125rem;
     line-height:30px;
     
 }
 .header>.info>div>span{
     display: inline-block;
     margin-right: auto;
-    margin-left: 150px;
-    margin-bottom: 20px;
+    margin-left: 9.375rem;
+    margin-bottom: 1.25rem;
     cursor: pointer;
     color: gray;
 }
 .header>.info>div>span>i{
-    font-size: 25px;
-    margin-right: 10px;
+    font-size: 1.562rem;
+    margin-right: 0.625rem;
     color: #766FFF;
 }
 .header>.info>div>div{
-    margin: 10px;
+    margin: 0.625rem;
 }
 .header>.info>div>div>span{
     display: inline-block;
@@ -106,11 +113,11 @@
     height: 40px;
     line-height: 15px;
     text-align: center;
-    margin: 5px;
-    font-size: 20px;
+    margin: 0.312rem;
+    font-size: 1.125rem;
     border-radius: 5px;
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
     cursor: pointer;
     transition: all 300ms linear;
     
@@ -121,6 +128,9 @@
 @media (max-width: 1270px){
     .header>.info{
         padding: 15px;
+     }
+     .header>.info>img{
+        max-width: 50%;
      }
      .header>.head>.menu>nav>ul{
         display: flex;
@@ -146,6 +156,9 @@
 @media (max-width: 1000px){
     .header>.info{
         padding: 15px;
+     }
+     .header>.info>img{
+        max-width: 50%;
      }
      .header>.head>.menu>nav>ul{
         display: flex;
@@ -188,6 +201,9 @@
    
     .header>.info{
         padding: 10px;
+     }
+     .header>.info>img{
+        max-width: 55%;
      }
      .head{
         justify-content: center;
@@ -236,26 +252,24 @@
     }
     
 }
-@media (max-width: 600px){
-    .head{
-        width: 100%;
-        background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%) ;
-        justify-content:space-between;
+@media (max-width: 499px){
+    .header{
+        font-size: 10px;
     }
     .title{
         margin-left: 5px;
     }
     .header>.info{
-       padding: 20px;
-       top: 0;
+       padding: 5px;
        flex-direction: column;
        margin: 2px auto;
-       margin-top: 30px;
-       
-       
+       margin-top: 20px; 
     }
+    .header>.info>img{
+        max-width: 95%;
+     }
     .header>.head>.menu>label{
-        margin: 40px 25px 0 120px;
+        margin: 30px 25px 0 120px;
         font-size: 25px;
     }
     .header>.head>.menu>label , .header>.head>.menu>input{
@@ -284,7 +298,6 @@
         
      }
     .header>.head>.menu>nav>ul>li>a{
-        font-size: 15px;
         display: block;
         height: 50px;
         line-height: 50px;
@@ -296,29 +309,25 @@
         padding: 1px;
     }
     .header>.info>div>p{
-        font-size: 12px;
+        
     }
     .header>.info>div>h1{
-        font-size: 25px;
         margin-bottom: 5px;
-        margin-top: 5px;
+        margin-top: 1px;
     }
     .header>.info>div>h4{
-        margin-top: 10px;
-        font-size: 13px;
+        margin-top: 8px;
         margin-bottom: -5px;
     }
     .header>.info>div>.second{
         padding: 5px;
         line-height:20px;
-        font-size: 11px;
         margin-top: 10px;
         
     }
     .header>.info>div>span{
         margin-left: 20px;
         margin-bottom: 2px;
-        font-size: 12px;
     }
     .header>.info>div>span>i{
         font-size: 18px;
