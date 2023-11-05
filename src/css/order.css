@@ -1,117 +1,116 @@
-div.order{
-    background-color: #e7e7ee;
-    text-align: center;
-    padding: 20px;
+div.order {
+  background-color: #e7e7ee;
+  text-align: center;
+  padding: 20px;
 }
-div.order>h1{
-    margin-top: 50px;
+div.order > h1 {
+  margin-top: 50px;
 }
-div.order>p{
-    padding: 20px 270px;
-    color: #8c778c;
-    line-height:25px;
+div.order > p {
+  padding: 20px 270px;
+  color: #8c778c;
+  line-height: 25px;
 }
-div.order>div.data{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+div.order > div.data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-div.order>div.data>div{
+div.order > div.data > div {
+  width: 350px;
+  height: 270px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  margin-bottom: 150px;
+  text-align: start;
+}
+div.order > div.data > div > h1 {
+  font-size: 20px;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+div.order > div.data > div > p {
+  padding: 15px;
+  color: #8c778c;
+  line-height: 20px;
+  margin-top: 10px;
+}
+div.order > div.data > div > span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+@media (max-width: 1270px) {
+  div.order {
+    padding: 18px;
+    height: auto;
+  }
+  div.order > p {
+    padding: 15px 150px;
+  }
+  div.order > div.data > div {
     width: 350px;
-    height: 270px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    margin: 20px;
-    margin-top: 50px;
-    padding: 20px;
-    margin-bottom: 150px;
-    text-align: start;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 30px;
+  }
 }
-div.order>div.data>div>h1{
-    font-size: 20px;
-    margin-top: 2px;
-    margin-bottom: 20px;
+@media (max-width: 1000px) {
+  div.order {
     padding: 15px;
+    height: auto;
+  }
+  div.order > p {
+    padding: 15px 120px;
+  }
+  div.order > div.data > div {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 30px;
+  }
 }
-div.order>div.data>div>p{
-    padding: 15px;
-    color: #8c778c;
-    line-height:20px;
-    margin-top: 10px;
+@media (max-width: 800px) {
+  div.order {
+    padding: 10px;
+    height: auto;
+  }
+  div.order > p {
+    padding: 10px 20px;
+  }
+  div.order > div.data {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  div.order > div.data > div {
+    width: 370px;
+    height: 350px;
+    margin: 15px;
+    margin-left: 60px;
+  }
 }
-div.order>div.data>div>span{
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 20px;
-}
-@media (max-width: 1270px){
-    div.order{
-        padding: 18px;
-        height: auto;
-    }
-    div.order>p{
-        padding: 15px 150px;
-    }
-    div.order>div.data>div{
-        width: 350px;
-        height: 350px;
-        padding: 10px;
-        margin: 10px;
-        margin-bottom: 30px;
-    }
-}
-@media (max-width: 1000px){
-    div.order{
-        padding: 15px;
-        height: auto;
-    }
-    div.order>p{
-        padding: 15px 120px;
-    }
-    div.order>div.data>div{
-        width: 350px;
-        height: 350px;
-        padding: 10px;
-        margin: 5px;
-        margin-bottom: 30px;
-    }
-}
-@media (max-width: 800px){
-    div.order{
-        padding: 10px;
-        height: auto;
-    }
-    div.order>p{
-        padding: 10px 20px;
-    }
-    div.order>div.data{
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    div.order>div.data>div{
-        width: 370px;
-        height: 350px;
-        margin: 15px;
-        margin-left: 60px;
-    }
-}
-@media (max-width: 600px){
-    div.order{
-        width: 100%;
-        padding: 5px;
-        height: auto;
-    }
-    div.order>p{
-        padding: 25px;
-    }
-    div.order>div.data{
-        flex-direction: column;
-        align-items: center;
-    }
-    div.order>div.data>div{
-        width: 80%;
-        margin: 15px;
-    }
-    
+@media (max-width: 600px) {
+  div.order {
+    width: 100%;
+    padding: 5px;
+    height: auto;
+  }
+  div.order > p {
+    padding: 25px;
+  }
+  div.order > div.data {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.order > div.data > div {
+    width: 80%;
+    margin: 15px;
+  }
 }

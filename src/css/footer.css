@@ -1,135 +1,138 @@
-div.footer{
-    display: flex;
-    color: white;
-    background-color: black;
+div.footer {
+  display: flex;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 450px;
+  padding: 50px;
+}
+div.footer > div.footer-1,
+div.footer > div.footer-2 {
+  width: 40%;
+  padding: 20px;
+}
+div.footer > div.footer-3 {
+  width: 20%;
+  padding: 20px;
+}
+div.footer > div.footer-2 > input {
+  width: 70%;
+  height: 40px;
+  background-color: black;
+  padding-left: 15px;
+  border: 1px solid #62629e;
+  color: white;
+}
+div.footer > div.footer-2 > input::placeholder {
+  color: #bfccbf;
+  font-size: 13px;
+  margin-left: 15px;
+  border-radius: 0;
+}
+div.footer > div.footer-2 > button {
+  width: 50px;
+  height: 40px;
+  background: linear-gradient(90deg, #766fff 1.18%, #87edfd 100%);
+  border: none;
+  font-size: 18px;
+  color: wheat;
+}
+div.footer > div.data > h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+div.footer > div.data > p {
+  color: #babeba;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+div.footer > div.data > p > span {
+  color: #766fff;
+}
+div.footer > div.data > div > span {
+  display: inline-block;
+  margin: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 2px;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+div.footer > div.data > div > span:hover {
+  background-color: #766fff;
+}
+@media (max-width: 1000px) {
+  div.footer {
+    padding: 7px;
+    height: 340px;
+  }
+}
+@media (max-width: 800px) {
+  div.footer {
+    padding: 7px;
+    height: 330px;
+  }
+  div.footer > div.footer-1,
+  div.footer > div.footer-2 {
+    width: 35%;
+  }
+  div.footer > div.footer-3 {
+    width: 30%;
+  }
+  div.footer > div.footer-2 > input {
     width: 100%;
-    height: 450px;
-    padding: 50px;
+    height: 30px;
+  }
+  div.footer > div.footer-2 > button {
+    width: 35px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-left: 60px;
+  }
 }
-div.footer>div.footer-1,div.footer>div.footer-2{
-    width: 40%;
-    padding: 20px;
-}
-div.footer>div.footer-3{
-    width: 20%;
-    padding: 20px;
-}
-div.footer>div.footer-2>input{
+@media (max-width: 550px) {
+  div.footer {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    flex-direction: column;
+  }
+  div.footer > div.footer-1,
+  div.footer > div.footer-2 {
     width: 70%;
-    height: 40px;
-    background-color: black;
-    padding-left: 15px;
-    border: 1px solid #62629e;
-    color: white;
-}
-div.footer>div.footer-2>input::placeholder{
-    color: #BFCCBF;
-    font-size: 13px;
-    margin-left: 15px;
-    border-radius: 0;
-}
-div.footer>div.footer-2>button{
-    width: 50px;
-    height: 40px;
-    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%);
-    border: none;
-    font-size: 18px;
-    color: wheat;
-}
-div.footer>div.data>h3{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    margin-top: 50px;
-    color: #FFFFFF;
-}
-div.footer>div.data>p{
-    color: #babeba;
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-div.footer>div.data>p>span{
-    color: #766FFF;
-}
-div.footer>div.data>div>span{
-    display: inline-block;
-    margin: 5px;
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 2px;
-    cursor: pointer;
-    transition: all 300ms linear;
-}
-div.footer>div.data>div>span:hover{
-    background-color: #766FFF;
-}
-@media (max-width: 1000px){
-    div.footer{
-        padding: 7px;
-        height: 340px;
-    }
-}
-@media (max-width: 800px){
-    div.footer{
-        padding: 7px;
-        height: 330px;
-    }
-    div.footer>div.footer-1,div.footer>div.footer-2{
-        width: 35%;
-    }
-    div.footer>div.footer-3{
-        width: 30%;
-    }
-    div.footer>div.footer-2>input{
-        width: 100%;
-        height: 30px;
-    }
-    div.footer>div.footer-2>button{
-        width: 35px;
-        height: 25px;
-        line-height: 25px;
-        margin-top: 5px;
-        margin-left: 60px;
-    }
-}
-@media (max-width: 550px){
-    div.footer{
-        width: 100%;
-        padding: 15px;
-        height: auto;
-        flex-direction:column;
-    }
-    div.footer>div.footer-1,div.footer>div.footer-2{
-        width: 70%;
-    }
-    div.footer>div.footer-3{
-        width: 50%;
-    }
-    
-    div.footer>div.footer-2>input{
-        width: 100%;
-        height: 30px;
-    }
-    div.footer>div.data{
-        padding: 5px;
-    }
-    div.footer>div.data>h3{
-        font-size: 16px;
-        margin-bottom: 15px;
-    }
-    div.footer>div.data>p{
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-    div.footer>div.data>div>span{
-        margin: 2px;
-    }
-    div.footer>div.footer-2>button{
-        width: 30px;
-        height: 20px;
-        margin-top: 5px; 
-        margin-left: 60px;
-        line-height: 10px;
-        text-align: center;
-    }
+  }
+  div.footer > div.footer-3 {
+    width: 50%;
+  }
+
+  div.footer > div.footer-2 > input {
+    width: 100%;
+    height: 30px;
+  }
+  div.footer > div.data {
+    padding: 5px;
+  }
+  div.footer > div.data > h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  div.footer > div.data > p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  div.footer > div.data > div > span {
+    margin: 2px;
+  }
+  div.footer > div.footer-2 > button {
+    width: 30px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 60px;
+    line-height: 10px;
+    text-align: center;
+  }
 }

@@ -1,343 +1,323 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-.header{
-    color: whitesmoke;
-    width: 100%;
-    font-size: 16px;
-    
+.header {
+  color: whitesmoke;
+  width: 100%;
+  font-size: 16px;
 }
-.head{
-    width: 100%;
-    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%) ;
+.head {
+  width: 100%;
+  background: linear-gradient(90deg, #766fff 1.18%, #87edfd 100%);
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.625rem;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 40px;
+}
+.header > .head > .menu > label,
+.header > .head > .menu > input {
+  display: none;
+}
+.header > .head > .menu > nav > ul {
+  margin-top: 1.625em;
+}
+.header > .head > .menu > nav > ul > li {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  transition: all 300ms linear;
+}
+.header > .head > .menu > nav > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  width: inherit;
+  height: inherit;
+  font-size: 0.875rem;
+  transition: all 300ms linear;
+}
+.header > .head > .menu > nav > ul > li > a:hover {
+  color: #766fff;
+}
+.header > .info {
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1.25em;
+  color: black;
+  display: flex;
+}
+.header > .info > img {
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 50%;
+}
+.header > .info > div {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 3.125em auto;
+  padding: 2.5em;
+}
+
+.header > .info > div > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
+  font-weight: 600;
+}
+.header > .info > div > p {
+  margin-top: 0.625rem;
+}
+.header > .info > div > h4 {
+  margin-top: 1.25rem;
+}
+.header > .info > div > .second {
+  color: #8c778c;
+  padding: 3.125rem;
+  line-height: 30px;
+}
+.header > .info > div > span {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 9.375rem;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  color: gray;
+}
+.header > .info > div > span > i {
+  font-size: 1.562rem;
+  margin-right: 0.625rem;
+  color: #766fff;
+}
+.header > .info > div > div {
+  margin: 0.625rem;
+}
+.header > .info > div > div > span {
+  display: inline-block;
+  background-color: #e7e7ee;
+  width: 40px;
+  height: 40px;
+  line-height: 15px;
+  text-align: center;
+  margin: 0.312rem;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.625rem;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+.header > .info > div > div > span:hover {
+  background: linear-gradient(90deg, #87edfd 1.18%, #766fff 100%);
+}
+@media (max-width: 1270px) {
+  .header > .info {
+    padding: 0.937em;
+  }
+  .header > .info > img {
+    max-width: 50%;
+  }
+  .header > .head > .menu > nav > ul {
     display: flex;
-    justify-content:space-between;
+    margin-left: 2.812em;
+  }
+  .header > .info > div > h1 {
+    font-size: 2.812rem;
+  }
+  .header > .info > div > h4 {
+    font-size: 1.25rem;
+  }
+  .header > .info > div > .second {
+    font-size: 1rem;
+    margin-top: 1.56em;
+    padding: 1.25em;
+  }
+  .header > .info > div > span {
+    margin-left: 3.75em;
+    margin-bottom: 0.312em;
+    font-size: 1rem;
+  }
 }
-.title{
-     font-size: 1.625rem;
-     font-weight: bold;
-     margin-top: 35px;
-     margin-left: 40px;
+@media (max-width: 1000px) {
+  .header > .info {
+    padding: 1em;
+  }
+  .header > .info > img {
+    max-width: 50%;
+  }
+  .header > .head > .menu > nav > ul {
+    display: flex;
+    margin-left: 2.5em;
+  }
+  .header > .head > .menu > nav > ul > li {
+    padding: 0 1.43rem;
+  }
+  .header > .info > div {
+    margin: 0;
+    padding: 0.312em;
+  }
+
+  .header > .info > div > p {
+    font-size: 1rem;
+  }
+  .header > .info > div > h1 {
+    font-size: 2.18rem;
+    margin-bottom: 0.625em;
+    margin-top: 0.625em;
+  }
+  .header > .info > div > h4 {
+    margin-top: 1em;
+    font-size: 1.125rem;
+    margin-bottom: -0.625em;
+  }
+  .header > .info > div > .second {
+    font-size: 1rem;
+    margin-top: 1.56em;
+    padding: 1.25em;
+  }
+  .header > .info > div > span {
+    margin-left: 4em;
+    margin-bottom: 0.312em;
+    font-size: 0.875rem;
+  }
 }
-.header>.head>.menu>label , .header>.head>.menu>input{
+@media (max-width: 800px) {
+  .header > .info {
+    padding: 0.625em;
+  }
+  .header > .info > img {
+    max-width: 55%;
+  }
+  .head {
+    justify-content: center;
+  }
+  .title {
+    margin-left: 0.312em;
+  }
+  .header > .head > .menu > nav > ul {
+    display: flex;
+    margin-left: 1.3em;
+  }
+  .header > .head > .menu > nav > ul > li {
+    padding: 0 0.812em;
+  }
+  .header > .head > .menu > nav > ul > li > a {
+    font-size: 0.812rem;
+  }
+
+  .header > .info > div {
+    margin: 0;
+    padding: 0.187em;
+  }
+  .header > .info > div > p {
+    font-size: 0.875rem;
+  }
+  .header > .info > div > h1 {
+    font-size: 1.875rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+  .header > .info > div > h4 {
+    margin-top: 0.973em;
+    font-size: 1rem;
+    margin-bottom: -0.625em;
+  }
+  .header > .info > div > .second {
+    font-size: 0.812rem;
+    margin-top: 1em;
+    padding: 0.625em;
+  }
+  .header > .info > div > span {
+    margin-left: 2.812em;
+    margin-bottom: 0.312em;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    margin-left: 0.312em;
+  }
+  .header > .info {
+    padding: 0.312em;
+    flex-direction: column;
+    margin: 0.125em auto;
+    margin-top: 1.25em;
+  }
+  .header > .info > img {
+    max-width: 95%;
+  }
+  .header > .head > .menu > label {
+    margin: 1.2em 1.56em 1.5em 7.5em;
+    font-size: 1.56rem;
+  }
+  .header > .head > .menu > label,
+  .header > .head > .menu > input {
+    display: block;
+  }
+  .header > .head > .menu > nav {
     display: none;
-}
-.header>.head>.menu>nav>ul{
-    margin-top: 1.625em;
-}
-.header>.head>.menu>nav>ul>li{
-    display: inline-block;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+  .header > .head > .menu > nav > ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .header > .head > .menu > nav > ul > li {
+    width: 100%;
+    height: 25px;
+    margin: 0.125em;
+    box-shadow: 1px 1px 3px gray;
+  }
+  .header > .head > .menu > nav > ul > li > a {
+    display: block;
     height: 50px;
     line-height: 50px;
-    text-align: center;
-    padding-left: 1.875em;
-    padding-right: 1.875em;
-    transition: all 300ms linear;
-    
+    margin-top: -0.875em;
+  }
+  .header > .info > div {
+    margin: 0;
+    padding: 0.062em;
+  }
+  .header > .info > div > h1 {
+    margin-bottom: 0.312em;
+    margin-top: 0.062em;
+  }
+  .header > .info > div > h4 {
+    margin-top: 0.5em;
+    margin-bottom: -0.312em;
+  }
+  .header > .info > div > .second {
+    padding: 0.312em;
+    line-height: 20px;
+    margin-top: 0.625em;
+  }
+  .header > .info > div > span {
+    margin-left: 1.25em;
+    margin-bottom: 0.125em;
+  }
+  .header > .info > div > span > i {
+    font-size: 1.125em;
+  }
+  .header > .info > div > div > span > i {
+    width: 25px;
+    height: 25px;
+    font-size: 1.125em;
+    line-height: 5px;
+  }
 }
-.header>.head>.menu>nav>ul>li>a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    width: inherit;
-    height: inherit;
-    font-size: 0.875rem;
-    transition: all 300ms linear;
-}
-.header>.head>.menu>nav>ul>li>a:hover{
-    color: #766FFF;
-}
-.header>.info{
-    width: 90%;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    padding: 1.25em;
-    color: black;
-    display: flex;
-}
-.header>.info>img{
-    border-radius: 10px;
-    object-fit: cover;
-    max-width: 50%;
-}
-.header>.info>div{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin: 3.125em auto;
-    padding: 2.5em;
-    
-}
-.header>.info>div>h1{
-    font-size: 3.125rem;
-    margin-bottom: 0.625rem;
-    margin-top: 0.625rem;
-    font-weight: 600;
-}
-.header>.info>div>p{
-    margin-top: 0.625rem;
-}
-.header>.info>div>h4{
-    margin-top: 1.25rem;
-}
-.header>.info>div>.second{
-    color: #8c778c;
-    padding: 3.125rem;
-    line-height:30px;
-    
-}
-.header>.info>div>span{
-    display: inline-block;
-    margin-right: auto;
-    margin-left: 9.375rem;
-    margin-bottom: 1.25rem;
-    cursor: pointer;
-    color: gray;
-}
-.header>.info>div>span>i{
-    font-size: 1.562rem;
-    margin-right: 0.625rem;
-    color: #766FFF;
-}
-.header>.info>div>div{
-    margin: 0.625rem;
-}
-.header>.info>div>div>span{
-    display: inline-block;
-    background-color: #e7e7ee;
-    width: 40px;
-    height: 40px;
-    line-height: 15px;
-    text-align: center;
-    margin: 0.312rem;
-    font-size: 1.125rem;
-    border-radius: 5px;
-    text-align: center;
-    padding: 0.625rem;
-    cursor: pointer;
-    transition: all 300ms linear;
-    
-}
-.header>.info>div>div>span:hover{
-    background:linear-gradient(90deg, #87EDFD 1.18%, #766FFF 100%) 
-}
-@media (max-width: 1270px){
-    .header>.info{
-        padding: 15px;
-     }
-     .header>.info>img{
-        max-width: 50%;
-     }
-     .header>.head>.menu>nav>ul{
-        display: flex;
-        margin-left: 45px;
-    }
-    .header>.info>div>h1{
-        font-size: 45px;
-    }
-    .header>.info>div>h4{
-        font-size: 20px;
-    }
-    .header>.info>div>.second{
-        font-size: 16px;
-        margin-top: 25px;
-        padding: 20px;
-    }
-    .header>.info>div>span{
-        margin-left: 60px;
-        margin-bottom: 5px;
-        font-size: 15px;
-    }
-}
-@media (max-width: 1000px){
-    .header>.info{
-        padding: 15px;
-     }
-     .header>.info>img{
-        max-width: 50%;
-     }
-     .header>.head>.menu>nav>ul{
-        display: flex;
-        margin-left: 40px;
-    }
-    .header>.head>.menu>nav>ul>li{
-        padding: 0 23px;
-    }
-    .header>.info>div{
-        margin: 0;
-        padding: 5px;
-    }
-    
-    .header>.info>div>p{
-        font-size: 16px;
-    }
-    .header>.info>div>h1{
-        font-size: 35px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    .header>.info>div>h4{
-        margin-top: 15px;
-        font-size: 18px;
-        margin-bottom: -10px;
-    }
-    .header>.info>div>.second{
-        font-size: 15px;
-        margin-top: 25px;
-        padding: 20px;
-    }
-    .header>.info>div>span{
-        margin-left: 65px;
-        margin-bottom: 5px;
-        font-size: 14px;
-    }
-    
-}
-@media (max-width: 800px){
-   
-    .header>.info{
-        padding: 10px;
-     }
-     .header>.info>img{
-        max-width: 55%;
-     }
-     .head{
-        justify-content: center;
-    }
-    .title{
-        margin-left: 5px;
-    }
-    .header>.head>.menu>nav>ul{
-        display: flex;
-        margin-left: 30px;
-    }
-    .header>.head>.menu>nav>ul>li{
-        padding: 0 13px;
-    
-    }
-    .header>.head>.menu>nav>ul>li>a{
-        font-size: 13px;
-    }
-    
-    .header>.info>div{
-        margin: 0;
-        padding: 3px;
-    }
-    .header>.info>div>p{
-        font-size: 14px;
-    }
-    .header>.info>div>h1{
-        font-size: 30px;
-        margin-bottom: 8px;
-        margin-top: 8px;
-    }
-    .header>.info>div>h4{
-        margin-top: 15px;
-        font-size: 16px;
-        margin-bottom: -10px;
-    }
-    .header>.info>div>.second{
-        font-size: 13px;
-        margin-top: 15px;
-        padding: 10px;
-    }
-    .header>.info>div>span{
-        margin-left: 45px;
-        margin-bottom: 5px;
-        font-size: 14px;
-    }
-    
-}
-@media (max-width: 499px){
-    .header{
-        font-size: 10px;
-    }
-    .title{
-        margin-left: 5px;
-    }
-    .header>.info{
-       padding: 5px;
-       flex-direction: column;
-       margin: 2px auto;
-       margin-top: 20px; 
-    }
-    .header>.info>img{
-        max-width: 95%;
-     }
-    .header>.head>.menu>label{
-        margin: 30px 25px 0 120px;
-        font-size: 25px;
-    }
-    .header>.head>.menu>label , .header>.head>.menu>input{
-        display: block;
-    }
-    .header>.head>.menu>nav{
-        display: none;
-    }
-    #hamburger-menu{
-        display: none;
-    }
-    #hamburger-menu:checked ~ nav {
-        display: block;
-    }
-    .header>.head>.menu>nav>ul{
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
-    .header>.head>.menu>nav>ul>li{
-        width: 100%;
-        height: 25px;
-        margin: 2px;
-        box-shadow: 1px 1px 3px gray;
-        
-     }
-    .header>.head>.menu>nav>ul>li>a{
-        display: block;
-        height: 50px;
-        line-height: 50px;
-        margin-top: -14px;
-
-    }
-    .header>.info>div{
-        margin: 0;
-        padding: 1px;
-    }
-    .header>.info>div>p{
-        
-    }
-    .header>.info>div>h1{
-        margin-bottom: 5px;
-        margin-top: 1px;
-    }
-    .header>.info>div>h4{
-        margin-top: 8px;
-        margin-bottom: -5px;
-    }
-    .header>.info>div>.second{
-        padding: 5px;
-        line-height:20px;
-        margin-top: 10px;
-        
-    }
-    .header>.info>div>span{
-        margin-left: 20px;
-        margin-bottom: 2px;
-    }
-    .header>.info>div>span>i{
-        font-size: 18px;
-    }
-    .header>.info>div>div>span>i{
-        width: 25px;
-        height: 25px;
-        font-size: 18px;
-        line-height: 5px;
-    }
-    
-}
-

@@ -1,163 +1,160 @@
-section.about{
-    color:black;
-    padding: 5px;
-    font-family: 'Core';
-    margin-left: 30px;
-    margin-top: 10px;
+section.about {
+  color: black;
+  padding: 5px;
+  font-family: "Core";
+  margin-left: 30px;
+  margin-top: 10px;
 }
 
-section.about>section{
-    display: flex;
+section.about > section {
+  display: flex;
 }
-section.about>section>div>h3{
-    font-size: 35px;
-    margin-left: 0;
-    margin-bottom: 20px;
+section.about > section > div > h3 {
+  font-size: 35px;
+  margin-left: 0;
+  margin-bottom: 20px;
 }
-section.about>section>div>p{
-    color: #8c778c;
-    padding: 5px;
-    padding-right: 25px;
-    line-height:30px;
-}
-
-section.about>section>div{
-    width: 90%;
-    text-align: justify;
-}
-section.about>section>div[data-leftside]{
-    margin-top: 20px;
-}
-section.about>section>div[data-rightside]{
-    margin-left: 180px;
-    margin-top: 20px;
-    margin-right: 20px;
-    width: 45%;
-}
-p.btn{
-    font-size: 18px;
-    margin-bottom: -2px;
+section.about > section > div > p {
+  color: #8c778c;
+  padding: 5px;
+  padding-right: 25px;
+  line-height: 30px;
 }
 
-section.about>section>div>progress{
-    display: block;
+section.about > section > div {
+  width: 90%;
+  text-align: justify;
+}
+section.about > section > div[data-leftside] {
+  margin-top: 20px;
+}
+section.about > section > div[data-rightside] {
+  margin:50px 20px 0 180px ;
+  width: 45%;
+}
+p.btn {
+  font-size: 18px;
+  margin-bottom: -2px;
+}
+
+section.about > section > div > progress {
+  display: block;
+  padding: 15px;
+  width: 350px;
+  position: relative;
+}
+section.about > section > div > div.data-first {
+  display: flex;
+  padding: 15px;
+  margin-top: 10px;
+}
+section.about > section > div > div.data-first > div.data-second {
+  margin: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  border: 1px solid rgb(218, 212, 212);
+  border-radius: 5px;
+}
+section.about > section > div > div.data-first > div.data-second > h1 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+section.about > section > div > div.data-first > div.data-second > h4 {
+  color: #8c778c;
+  font-size: 16px;
+  margin-top: 20px;
+}
+section.about > section > div > div.data-first > div.data-second > span {
+  font-size: 25px;
+  color: #766fff;
+}
+@media (max-width: 1260px) {
+  section.about {
     padding: 15px;
-    width: 350px;
-    position: relative;
-}
-section.about>section>div>div.data-first{
-    display: flex;
-    padding: 15px;
-    margin-top: 10px;
-}
-section.about>section>div>div.data-first>div.data-second{
-    margin: 10px;
-    padding: 20px;
     padding-top: 20px;
-    border: 1px solid rgb(218, 212, 212);
-    border-radius: 5px;
+  }
+  section.about > section > div > h3 {
+    font-size: 31px;
+  }
+  section.about > section > div[data-rightside] {
+    margin: 40px 0 50px 10px;
+    width: 45%;
+  }
 }
-section.about>section>div>div.data-first>div.data-second>h1{
-    font-size: 25px;
-    margin: 10px 0;
+@media (max-width: 1000px) {
+  section.about {
+    padding: 10px;
+    padding-top: 15px;
+  }
+  section.about > section {
+    flex-direction: column;
+  }
+  section.about > section > div > h3 {
+    font-size: 30px;
+  }
+  section.about > section > div > p {
+    font-size: 17px;
+    padding-right: 5px;
+  }
+  section.about > section > div > div.data-first > div.data-second {
+    padding: 15px;
+    margin: 25px;
+  }
+  section.about > section > div[data-rightside] {
+    margin: 10px 0 50px 90px;
+    width: 60%;
+  }
 }
-section.about>section>div>div.data-first>div.data-second>h4{
-    color: #8c778c;
+@media (max-width: 800px) {
+  section.about {
+    padding: 5px;
+    padding-top: 15px;
+  }
+  section.about > section {
+    flex-direction: column;
+  }
+  section.about > section > div > h3 {
+    font-size: 30px;
+  }
+  section.about > section > div > p {
     font-size: 16px;
-    margin-top: 20px;
+    padding-right: 5px;
+  }
+  section.about > section > div > div.data-first > div.data-second {
+    padding: 10px;
+    margin: 5px;
+  }
+  section.about > section > div[data-rightside] {
+    margin: 10px 0 50px 60px;
+    width: 60%;
+  }
 }
-section.about>section>div>div.data-first>div.data-second>span{
-    font-size: 25px;
-    color: #766FFF;
+@media (max-width: 550px) {
+  section.about {
+    width: 100%;
+    padding: 5px;
+    margin-left: 5px;
+  }
+  section.about > section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  section.about > section > div > h3 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  section.about > section > div > p {
+    font-size: 12px;
+    padding: 20px;
+    margin-right: 10px;
+  }
+  section.about > section > div > div.data-first {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.about > section > div[data-rightside] {
+    margin: 10px 10px 50px 20px;
+    width: 70%;
+  }
 }
-@media (max-width: 1260px){
-    section.about{
-        padding: 15px;
-        padding-top: 20px;
-    }
-    section.about>section>div>h3{
-        font-size: 31px;
-    }
-    section.about>section>div[data-rightside]{
-        margin: 360px 0 50px 10px;
-        width: 45%;
-    }
-}
-@media (max-width: 1000px){
-    section.about{
-        padding: 10px;
-        padding-top: 15px;
-    }
-    section.about>section{
-        flex-direction: column;
-    } 
-    section.about>section>div>h3{
-        font-size: 30px;
-    }
-    section.about>section>div>p{
-        font-size: 17px;
-        padding-right: 5px;
-    }
-    section.about>section>div>div.data-first>div.data-second{
-        padding: 15px;
-        margin: 25px;
-    }
-    section.about>section>div[data-rightside]{
-        margin: 10px 0 50px 90px;
-        width: 60%;
-    }
-}
-@media (max-width: 800px){
-    section.about{
-        padding: 5px;
-        padding-top: 15px;
-    } 
-    section.about>section{
-        flex-direction: column;
-    } 
-    section.about>section>div>h3{
-        font-size: 30px;
-    }
-    section.about>section>div>p{
-        font-size: 16px;
-        padding-right: 5px;
-    }
-    section.about>section>div>div.data-first>div.data-second{
-        padding: 10px;
-        margin: 5px;
-    }
-    section.about>section>div[data-rightside]{
-        margin: 10px 0 50px 60px;
-        width: 60%;
-    }
-}
-@media (max-width: 550px){
-    section.about{
-        width: 100%;
-        padding: 5px;
-        margin-left: 5px;
-        
-    }
-    section.about>section{
-        flex-direction: column;
-        justify-content: center;
-    }
-    section.about>section>div>h3{
-        font-size: 20px;
-    }
-    section.about>section>div>p{
-        font-size: 12px;
-        padding: 20px;
-        margin-right: 10px;
-    }
-    section.about>section>div>div.data-first{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    section.about>section>div[data-rightside]{
-        margin: 10px 10px 50px 20px;
-        width: 70%;
-    }
-}
-

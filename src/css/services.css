@@ -1,261 +1,251 @@
+div.services {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+div.services > div > h1 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+div.services > div > p {
+  color: #777777;
+  margin-bottom: 30px;
+}
+div.services > div > ul {
+  height: 80px;
+  text-align: center;
+  display: inline-block;
+}
+div.services > div > ul > li {
+  display: inline-block;
+  margin: 30px;
+  height: 50px;
+  line-height: 50px;
+}
+div.services > div > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  transition: all 300ms linear;
+}
 
-div.services{
-    width: 100%;
+div.services > div > ul > li > a:hover {
+  color: #766dff;
+}
+div.services > div > div.image {
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+div.services > div > div.image > div.count {
+  width: 360px;
+  height: 450px;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 400ms linear;
+}
+div.services > div > div.image > div.count > img {
+  width: 345px;
+  height: 345px;
+  border-radius: 10px;
+}
+div.services > div > div.image > div.count::before {
+  content: "\2735";
+  width: 345px;
+  height: 345px;
+  display: block;
+  position: absolute;
+  left: -130%;
+  background: linear-gradient(90deg, #766fff 1.18%, #87edfd 100%);
+  border-radius: 10px;
+  opacity: 0.8;
+  font-size: 100px;
+  color: white;
+  line-height: 350px;
+  transition: all 400ms linear;
+}
+div.services > div > div.image > div.count:hover::before {
+  left: 0;
+}
+div.services > div > div.image > div > h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+div.services > div > div.image > div > p {
+  font-size: 16px;
+  color: #968f8f;
+}
+div.services > div > button {
+  padding: 18px 40px;
+  margin: 7px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 700ms linear;
+  background: linear-gradient(90deg, #766fff 1.18%, #87edfd 100%);
+}
+div.services > div > button:hover {
+  background: linear-gradient(90deg, #87edfd 1.18%, #766fff 100%);
+}
+div.services > div > div.image > div.count > h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+div.services > div > div.image > div.count > p {
+  font-size: 16px;
+  color: #968f8f;
+}
+@media (max-width: 1270px) {
+  div.services {
     padding: 20px;
-    text-align: center;
-    margin-top: 80px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-div.services>div>h1{
-    margin-bottom: 20px;
-    font-size: 35px;
-}
-div.services>div>p{
-    color: #777777;
-    margin-bottom: 30px;
-}
-div.services>div>ul{
-    height: 80px;
-    text-align: center;
-    display: inline-block;
-
-}
-div.services>div>ul>li{
-    display: inline-block;
-    margin: 30px;
-    height: 50px;
-    line-height: 50px;
-    
-    
-}
-div.services>div>ul>li>a{
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
-    transition: all 300ms linear;
-}
-
-div.services>div>ul>li>a:hover{
-    color:#766dff ;
-}
-div.services>div>div.image{
-    display: flex;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-    
-}
-div.services>div>div.image>div.count{
-    width: 360px;
+    margin-top: 30px;
+  }
+  div.services > div > h1 {
+    font-size: 32px;
+  }
+  div.services > div > div.image {
+    margin: 3px;
+    padding: 5px;
+  }
+  div.services > div > div.image > div.count {
+    width: 300px;
     height: 450px;
-    margin: 20px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 400ms linear;
+  }
+  div.services > div > div.image > div.count > img {
+    width: 300px;
+    height: 320px;
+  }
+  div.services > div > div.image > div.count::before {
+    width: 300px;
+    height: 320px;
+    font-size: 75px;
+    line-height: 320px;
+  }
 }
-div.services>div>div.image>div.count>img{
-    width: 345px;
-    height: 345px;
-    border-radius: 10px;
-}
-div.services>div>div.image>div.count::before{
-    content: "\2735";
-    width: 345px;
-    height: 345px;
-    display: block;
-    position:absolute;
-    left: -130%;
-    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%);
-    border-radius:10px;
-    opacity: 0.8;
-    font-size: 100px;
-    color: white;
-    line-height: 350px;
-    transition: all 400ms linear;
-}
-div.services>div>div.image>div.count:hover::before{
-    left: 0;
-}
-div.services>div>div.image>div>h2{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-div.services>div>div.image>div>p{
-    font-size: 16px;
-    color: #968f8f;
-}
-div.services>div>button{
-    padding:18px 40px;
-    margin: 7px;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    border: none;
-    border-radius: 5px;
-    font-weight: 600;
+@media (max-width: 1000px) {
+  div.services {
+    padding: 15px;
     margin-top: 25px;
-    color: white;
-    cursor: pointer;
-    transition: all 700ms linear;
-    background:linear-gradient(90deg, #766FFF 1.18%, #87EDFD 100%)
+  }
+  div.services > div > h1 {
+    font-size: 30px;
+  }
+  div.services > div > ul > li {
+    margin: 25px;
+  }
+  div.services > div > ul > li > a {
+    font-size: 13px;
+  }
+  div.services > div > p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  div.services > div > div.image {
+    margin: 2px;
+    padding: 5px;
+  }
+  div.services > div > div.image > div.count {
+    width: 250px;
+    height: 450px;
+  }
+  div.services > div > div.image > div.count > img {
+    width: 250px;
+    height: 300px;
+  }
+  div.services > div > div.image > div.count::before {
+    width: 250px;
+    height: 300px;
+    font-size: 70px;
+    line-height: 300px;
+  }
 }
-div.services>div>button:hover{
-    background:linear-gradient(90deg, #87EDFD 1.18%, #766FFF 100%) 
+@media (max-width: 800px) {
+  div.services {
+    padding: 10px;
+    margin-top: 25px;
+  }
+  div.services > div > h1 {
+    font-size: 28px;
+  }
+  div.services > div > ul > li {
+    margin: 15px;
+  }
+  div.services > div > ul > li > a {
+    font-size: 13px;
+  }
+  div.services > div > div.image {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.services > div > div.image > div.count {
+    width: 350px;
+    height: 450px;
+  }
+  div.services > div > div.image > div.count > img {
+    width: 350px;
+    height: 350px;
+  }
+  div.services > div > div.image > div.count::before {
+    width: 350px;
+    height: 350px;
+    font-size: 70px;
+    line-height: 350px;
+  }
 }
-div.services>div>div.image>div.count>h1{
-    font-size: 20px;
-    margin-bottom: 10px;
+@media (max-width: 550px) {
+  div.services {
+    width: 100%;
+    padding: 5px;
     margin-top: 20px;
-    font-weight: 500;
-}
-div.services>div>div.image>div.count>p{
-    font-size: 16px;
-    color: #968f8f;
-}
-@media (max-width: 1270px){
-    div.services{
-        padding: 20px;
-        margin-top: 30px;
-    }
-    div.services>div>h1{
-        font-size: 32px;
-    }
-    div.services>div>div.image{
-        margin: 3px;
-        padding: 5px;
-    }
-    div.services>div>div.image>div.count{
-        width: 300px;
-        height: 450px;
-        
-    }
-    div.services>div>div.image>div.count>img{
-        width: 300px;
-        height: 320px;
-    }
-    div.services>div>div.image>div.count::before{
-        width:300px ;
-        height: 320px;
-        font-size: 75px;
-        line-height: 320px;
-    }
-}
-@media (max-width: 1000px){
-    div.services{
-        padding: 15px;
-        margin-top: 25px;
-    }
-    div.services>div>h1{
-        font-size: 30px;
-    }
-    div.services>div>ul>li{
-        margin: 25px;
-    }
-    div.services>div>ul>li>a{
-        font-size: 14px;
-    }
-    div.services>div>p{
-        margin-bottom: 15px;
-        margin-top: 10px;
-    }
-    div.services>div>div.image{
-        margin: 2px;
-        padding: 5px;
-    }
-    div.services>div>div.image>div.count{
-        width: 250px;
-        height: 450px;
-        
-    }
-    div.services>div>div.image>div.count>img{
-        width: 250px;
-        height: 300px;
-    }
-    div.services>div>div.image>div.count::before{
-        width:250px ;
-        height: 300px;
-        font-size: 70px;
-        line-height: 300px;
-    }
-}
-@media (max-width: 800px){
-    div.services{
-        padding: 10px;
-        margin-top: 25px;
-    }
-    div.services>div>h1{
-        font-size: 28px;
-    }
-    div.services>div>ul>li{
-        margin: 15px;
-    }
-    div.services>div>ul>li>a{
-        font-size: 13px;
-    }
-    div.services>div>div.image{
-        flex-direction: column;
-        align-items: center;
-    }
-    div.services>div>div.image>div.count{
-        width: 350px;
-        height: 450px;
-        
-    }
-    div.services>div>div.image>div.count>img{
-        width: 350px;
-        height: 350px;
-    }
-    div.services>div>div.image>div.count::before{
-        width:350px ;
-        height: 350px;
-        font-size: 70px;
-        line-height: 350px;
-    }
-}
-@media (max-width: 550px){
-    div.services{
-        width: 100%;
-        padding: 5px;
-        margin-top: 20px;
-    }
-    div.services>div>h1{
-        font-size: 15px;
-    }
-    div.services>div>p{
-        padding: 25px;
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-    div.services>div>ul{
-        height: 30px;
-    }
-    div.services>div>ul>li{
-        margin: 7px;
-    }
-    div.services>div>ul>li>a{
-        font-size: 10px;
-    }
-    div.services>div>div.image{
-        flex-direction: column;
-        align-items: center;
-    }
-    div.services>div>div.image>div.count{
-        width: 280px;
-        height: 360px;
-        
-    }
-    div.services>div>div.image>div.count>img{
-        width: 280px;
-        height: 280px;
-    }
-    div.services>div>div.image>div.count::before{
-        width:280px ;
-        height: 280px;
-        font-size: 60px;
-        line-height: 280px;
-    }
-    
+  }
+  div.services > div > h1 {
+    font-size: 15px;
+  }
+  div.services > div > p {
+    padding: 25px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  div.services > div > ul {
+    height: 30px;
+  }
+  div.services > div > ul > li {
+    margin: 7px;
+  }
+  div.services > div > ul > li > a {
+    font-size: 10px;
+  }
+  div.services > div > div.image {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.services > div > div.image > div.count {
+    width: 280px;
+    height: 360px;
+  }
+  div.services > div > div.image > div.count > img {
+    width: 280px;
+    height: 280px;
+  }
+  div.services > div > div.image > div.count::before {
+    width: 280px;
+    height: 280px;
+    font-size: 60px;
+    line-height: 280px;
+  }
 }

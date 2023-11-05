@@ -1,15 +1,15 @@
 button {
-    border: none;
+  border: none;
 }
 button.button-small {
-    padding: 10px 15px;
-    font-size: 12px;
+  padding: 10px 15px;
+  font-size: 12px;
 }
 
 button.button-large {
-    padding: 20px 30px;
-    margin: 25px 10px 40px 15px;
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 14px;
+  padding: 20px 30px;
+  margin: 25px 10px 40px 15px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
 }
